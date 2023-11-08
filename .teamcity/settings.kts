@@ -61,7 +61,7 @@ project {
         }
         amazonEC2CloudProfile {
             id = "amazon-1"
-            name = "Cloud AWS Profile"
+            name = "Cloud AWS Profile (EC2)"
             serverURL = "http://10.128.93.57:8124"
             terminateIdleMinutes = 30
             region = AmazonEC2CloudProfile.Regions.EU_WEST_DUBLIN
