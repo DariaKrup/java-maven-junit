@@ -9,6 +9,7 @@ Steps (!):
 $ git clone https://github.com/mkyong/maven-examples.git
 $ cd maven-code-coverage
 $ mvn clean test
+The end.
 
 # View report at 'target/site/jacoco/index.html'
 ```
