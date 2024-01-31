@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <project>
   <modelVersion>4.0.0</modelVersion>
-  <name>ManualProjectParameters Config DSL Script</name>
-  <groupId>ManualProjectParameters</groupId>
-  <artifactId>ManualProjectParameters_dsl</artifactId>
+  <name>VcsSettingsPromptJUnitProject Config DSL Script</name>
+  <groupId>VcsSettingsPromptJUnitProject</groupId>
+  <artifactId>VcsSettingsPromptJUnitProject_dsl</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <parent>
@@ -22,7 +22,7 @@
     </repository>
     <repository>
       <id>teamcity-server</id>
-      <url>http://10.128.93.51:8111/app/dsl-plugins-repository</url>
+      <url>https://vault.burnasheva.click:8443/app/dsl-plugins-repository</url>
       <snapshots>
         <enabled>true</enabled>
       </snapshots>

@@ -39,9 +39,9 @@ object Build : BuildType({
                   checked = "true", unchecked = "false")
         password("password_parameter", "credentialsJSON:76c0ae23-92e2-4050-bbf4-133faef57d6f", label = "Password", description = "Password parameter", readOnly = true)
         param("agentName", "", "webPopulatedSelect", "headers" to """
-            Authorization:Bearer eyJ0eXAiOiAiVENWMiJ9.ZDNXRmphME5BOXItMjZ5ZUM1X20tcExTVWUw.MmMwYWZlNWQtYzc1OS00YzRhLWI3OTYtYjlhMjU1OGFjNGIz
+            Authorization:Bearer eyJ0eXAiOiAiVENWMiJ9.Y1JTM1hWRFFPRW5UOHFUTVcycVFUSkNQcGY0.ZTFiNmJlOGUtYzZmMi00YTkzLWI1OTYtNTNhYWU0OTRhMmQ2
             Accept:application/json
-        """.trimIndent(), "method" to "GET", "display" to "prompt", "format" to "json", "multiple" to "true", "description" to "Web Parameter for Agent Name", "label" to "web", "tagSupport" to "true", "url" to "http://10.128.93.51:8111/app/rest/agents/id:%agentNumber%", "transform" to """
+        """.trimIndent(), "method" to "GET", "display" to "prompt", "format" to "json", "multiple" to "true", "description" to "Web Parameter for Agent Name", "label" to "web", "tagSupport" to "true", "url" to "http://10.128.93.57:8154/app/rest/agents/id:%agentNumber%", "transform" to """
             [
               {
                 "operation": "shift",
@@ -51,7 +51,6 @@ object Build : BuildType({
               }
             ]
         """.trimIndent(), "enableEditOnError" to "true")
-        text("agentNumber", "11", readOnly = true, allowEmpty = true)
         checkbox("check", "")
         text("not_empty_text_parameter", "", label = "Not empty text", description = "Not empty text parameter", display = ParameterDisplay.PROMPT, allowEmpty = false)
         text("regex_text_parameter", "a12", label = "Regex parameter", description = "Regex text parameter", display = ParameterDisplay.HIDDEN,
@@ -59,6 +58,7 @@ object Build : BuildType({
         select("select_parameter", "a1", label = "Selector", description = "Selector with multiple values allowed",
                 allowMultiple = true, valueSeparator = ";",
                 options = listOf("a1" to "1", "a2" to "2", "a5" to "5", "a10" to "10"))
+        text("agentNumber", "21", allowEmpty = true)
 
         text("added_parameter_another_branch", "", label = "Branch", description = "Parameter from another branch", display = ParameterDisplay.PROMPT, allowEmpty = false)
     }
