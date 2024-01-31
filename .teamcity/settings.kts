@@ -59,6 +59,8 @@ object Build : BuildType({
         select("select_parameter", "a1", label = "Selector", description = "Selector with multiple values allowed",
                 allowMultiple = true, valueSeparator = ";",
                 options = listOf("a1" to "1", "a2" to "2", "a5" to "5", "a10" to "10"))
+
+        text("added_parameter_another_branch", "", label = "Branch", description = "Parameter from another branch", display = ParameterDisplay.PROMPT, allowEmpty = false)
     }
 
     vcs {
