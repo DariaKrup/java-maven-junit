@@ -1,5 +1,6 @@
 # Maven & JUnit & JaCoCo
 Maven, JUnit and JaCoCo project example.
+-- Add for PR --
 
 Project link: https://www.mkyong.com/maven/maven-jacoco-code-coverage-example/
 
