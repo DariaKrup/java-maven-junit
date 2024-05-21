@@ -43,7 +43,7 @@ object Build : BuildType({
         maven {
             id = "Maven2"
             goals = "clean test"
-            runnerArgs = "-Dmaven.test.failure.ignore=true"
+            runnerArgs = "-Dmaven.test.failure.ignore=false"
             mavenVersion = custom {
                 path = "%teamcity.tool.maven.3.6.0%"
             }
