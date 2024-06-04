@@ -27,11 +27,6 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 
 version = "2023.11"
 
-val contextParam = "${DslContext.getParameter("projType")}"
-if (contextParam != "mvn") {
-    throw IllegalArgumentException("The parameter should be mvn. Create or update it")
-}
-
 project {
 
     buildType(Build)
