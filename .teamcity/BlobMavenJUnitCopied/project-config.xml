@@ -10,7 +10,6 @@
         <param name="connectionId" value="BlobMavenJUnit_AzureCloudConnectionMsalFromStorage" />
         <param name="displayName" value="Azure Cloud Connection (MSAL from storage)" />
         <param name="msalAuthority" value="https://login.microsoftonline.com/080e4d1b-3521-4847-94da-37050321d1ad" />
-        <param name="msalScopes" value="https://storage.azure.com/.default" />
         <param name="providerType" value="Azure" />
         <param name="secure:clientSecret" value="credentialsJSON:68eb3c3c-c0a1-4694-af1f-92f7f89081f5" />
       </parameters>
