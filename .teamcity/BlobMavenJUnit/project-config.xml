@@ -28,7 +28,6 @@
     </extension>
     <extension id="BlobAzure" type="storage_settings">
       <parameters>
-        <param name="azure_compute_md5" value="true" />
         <param name="azure_connection_id" value="AzureCloudDefault" />
         <param name="azure_storage_account" value="https://dkrupkinapublic.blob.core.windows.net/" />
         <param name="azure_storage_container" value="dkrupkina-blob" />
