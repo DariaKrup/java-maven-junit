@@ -43,6 +43,13 @@ project {
             templateName = "ubuntu-agent"
         }
         kubernetesExecutor {
+            id = "PROJECT_EXT_290"
+            connectionId = "PROJECT_EXT_2"
+            profileName = "K8s (new one)"
+            buildsLimit = "3"
+            templateName = "linux-amd64-pwsh-agent"
+        }
+        kubernetesExecutor {
             id = "PROJECT_EXT_3"
             connectionId = "PROJECT_EXT_2"
             profileName = "K8S Executor"
