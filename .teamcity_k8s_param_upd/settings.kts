@@ -39,8 +39,8 @@ project {
             profileName = "K8s"
             buildsLimit = "2"
             serverURL = "http://10.128.93.57:8321"
-            containerParameters = "parameter=k8s"
             templateName = "linux-arm64-agent"
+            param("containerParameters", "parameter=k8s")
         }
     }
 }
@@ -71,6 +71,8 @@ object Build : BuildType({
     }
 
     requirements {
-        equals("parameter", "k8s")
+        equals("parameter", "k8s", "RQ_1")
     }
+    
+    disableSettings("RQ_1")
 })
