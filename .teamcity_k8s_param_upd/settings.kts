@@ -71,8 +71,6 @@ object Build : BuildType({
     }
 
     requirements {
-        equals("parameter", "k8s", "RQ_1")
+        equals("parameter", "k8s")
     }
-    
-    disableSettings("RQ_1")
 })
