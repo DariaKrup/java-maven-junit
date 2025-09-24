@@ -39,6 +39,10 @@ object Build : BuildType({
         root(DslContext.settingsRoot)
     }
 
+    params {
+        text("TextParameter", "value")
+    }
+
     steps {
         maven {
             id = "Maven2"
