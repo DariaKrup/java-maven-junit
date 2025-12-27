@@ -8,7 +8,7 @@ public class MessageBuilder {
 
         if (name == null || name.trim().length() == 0) {
 
-            result.append("Please provide a name!");
+            result.append("Please provide a new name!");
 
         } else {
 
